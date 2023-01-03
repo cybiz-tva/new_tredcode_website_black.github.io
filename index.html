@@ -162,7 +162,7 @@
         </div>
         <div class="my-5 row py-5">
             <div class="col-lg-7">
-                <img src="./img/Screenshot_30.png" width="100%" height="100%"/>
+                <img src="./img/Screenshot_30.png" width="100%" height="100%" />
             </div>
             <div class="col-lg-5">
                 <div class="mx-3 img_description_bold text-left" style="color:#5271ff">
@@ -172,7 +172,7 @@
                     <span style="font-weight: bold">See how big players are building positions
                         in Index. Best tool to have for option
                         buying in markets
-                        </span>
+                    </span>
                 </div>
             </div>
         </div>
@@ -186,16 +186,16 @@
                         bullish or bearish positions in the market
                         and analyze with the custom time range
                         selector
-                        </span>
+                    </span>
                 </div>
             </div>
             <div class="col-lg-7 pb-5 mb-5">
-                <img src="./img/Screenshot_29.png" width="100%" height="100%"/>
+                <img src="./img/Screenshot_29.png" width="100%" height="100%" />
             </div>
         </div>
         <div class="my-5 row py-5">
             <div class="col-lg-7">
-                <img src="./img/Screenshot_28.png" width="100%" height="100%"/>
+                <img src="./img/Screenshot_28.png" width="100%" height="100%" />
             </div>
             <div class="col-lg-5">
                 <div class="mx-3 img_description_bold text-left" style="color:#5271ff">
@@ -206,7 +206,38 @@
                         Add In Your Swing Baskets, & Gives Clear
                         Idea About Current Money Flow Across
                         The Market..
-                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Alternate Design -->
+        <div class="my-5 row py-5">
+            <div class="col-lg-6">
+                <img src="./img/Screenshot_30.png" id="Tredcode_Image" width="100%" />
+            </div>
+            <div class="col-lg-6">
+                <div class="row mt-5" style="cursor: pointer;">
+                    <div class="col-4">
+                        <div class="ms-3 img_description_bold_2 text-left" style="color:#5271ff" id="Money_Flux">
+                            <span style="font-weight: bold"><span id="Money_Flux_Underline">Mon</span>ey Flux</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="ms-3 img_description_bold_2 text-left" id="Index_Analysis">
+                            <span style="font-weight: bold"><span id="Index_Analysis_Underline">Ind</span>ex Analysis</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="ms-3 img_description_bold_2 text-left" id="Swing_Centre">
+                            <span style="font-weight: bold"><span id="Swing_Centre_Underline">Swi</span>ng Centre</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 mx-3 img_description_2 text-left">
+                    <span style="font-weight: bold" id="img_description_2_text">See how big players are building positions
+                        in Index. Best tool to have for option
+                        buying in markets
+                    </span>
                 </div>
             </div>
         </div>
@@ -699,6 +730,36 @@
             $('#close').click(function () {
                 $('.lightbox-column').empty()
                 $('.lightbox').hide()
+            })
+            $('#Money_Flux').click(function(){
+                $('#Tredcode_Image').attr("src","./img/Screenshot_30.png")
+                $('#Swing_Centre').css('color','black')
+                $('#Swing_Centre_Underline').css('border-bottom','0px solid white')
+                $('#Index_Analysis').css('color','black')
+                $('#Index_Analysis_Underline').css('border-bottom','0px solid white')
+                $('#Money_Flux').css('color','#5271ff')
+                $('#Money_Flux_Underline').css('border-bottom','5px solid #5271ff')
+                $('#img_description_2_text').text('See how big players are building positions in Index. Best tool to have for option buying in markets')
+            })
+            $('#Index_Analysis').click(function(){
+                $('#Tredcode_Image').attr("src","./img/Screenshot_29.png")
+                $('#Money_Flux').css('color','black')
+                $('#Money_Flux_Underline').css('border-bottom','0px solid white')
+                $('#Swing_Centre').css('color','black')
+                $('#Swing_Centre_Underline').css('border-bottom','0px solid white')
+                $('#Index_Analysis').css('color','#5271ff')
+                $('#Index_Analysis_Underline').css('border-bottom','5px solid #5271ff')
+                $('#img_description_2_text').text('Now see whether institutions are building bullish or bearish positions in the market and analyze with the custom time range selector')
+            })
+            $('#Swing_Centre').click(function(){
+                $('#Tredcode_Image').attr("src","./img/Screenshot_28.png")
+                $('#Money_Flux').css('color','black')
+                $('#Money_Flux_Underline').css('border-bottom','0px solid white')
+                $('#Index_Analysis').css('color','black')
+                $('#Index_Analysis_Underline').css('border-bottom','0px solid white')
+                $('#Swing_Centre').css('color','#5271ff')
+                $('#Swing_Centre_Underline').css('border-bottom','5px solid #5271ff')
+                $('#img_description_2_text').text('It Provides the Best Stocks Available To Add In Your Swing Baskets, & Gives Clear Idea About Current Money Flow Across The Market..')
             })
         })
     </script>
