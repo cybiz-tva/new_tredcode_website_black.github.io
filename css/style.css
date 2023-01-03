@@ -46,14 +46,13 @@ h6 {
   background: #6c63ff;
   color: #fff;
   transition: all 0.4s;
-  background: linear-gradient(90deg, #3958EC -19.27%, #253BA2 100%);
+  background: linear-gradient(90deg, #3958ec -19.27%, #253ba2 100%);
 }
 
 .back-to-top i:hover {
-  background: linear-gradient(90deg, #3958EC -19.27%, #253BA2 100%);
+  background: linear-gradient(90deg, #3958ec -19.27%, #253ba2 100%);
   color: #fff;
 }
-
 
 /*--------------------------------------------------------------
 # Header
@@ -755,7 +754,7 @@ section#services h2 {
   padding: 50px 0px;
 }
 .service-content.text-left h4 a {
-  font-family: ""Outfit", sans-serif";
+  font-family: "" Outfit ", sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -764,7 +763,7 @@ section#services h2 {
   text-decoration: none;
 }
 .service-content.text-left p {
-  font-family: ""Outfit", sans-serif";
+  font-family: "" Outfit ", sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1301,49 +1300,57 @@ section#contact p {
   }
 }
 
-@media (min-width:1200px) {
-  #videos .container{
+@media (min-width: 1200px) {
+  #videos .container {
     max-width: 1140px;
   }
 }
 
 .text-left {
-  text-align: left!important;
+  text-align: left !important;
 }
 
 /*--------------------------------------------------------------
 # About_Tredcode
 --------------------------------------------------------------*/
 
-.img_description_bold{
+.img_description_bold {
   font-size: 18px;
   padding-top: 5px;
 }
 
-.img_description_bold_2{
-  font-size: 18px;
-  padding-top: 5px;
-}
-
-.img_description_2{
-  font-size: 18px;
-  padding-top: 5px;
-}
-
-.img_description{
+.img_description {
   font-size: 16px;
 }
 
-#Money_Flux_Underline{
+#Money_Flux_Underline {
   border-bottom: 5px solid #5271ff;
   padding-bottom: 3px;
 }
 
-@media (max-width:992px) {  
-  .img_description_bold{
-    padding-top: 50px;
+#About_Tredcode_Mobile_View {
+  display: none;
+}
+
+#About_Tredcode {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  #About_Tredcode_Mobile_View {
+    display: block;
   }
-  .img_description_bold_2{
-    padding-top: 50px;
+  #About_Tredcode {
+    display: none;
+  }
+  .img_description_bold {
+    margin-left: 0px !important;
+  }
+  .img_description {
+    margin-left: 0px !important;
+  }
+  #second_row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
